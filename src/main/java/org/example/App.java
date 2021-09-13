@@ -20,9 +20,10 @@ public class App
 
         int area = width * length;
 
-        double converFactor = 0.09290304;
+        // Use a constant to hold the conversion factor.
+        final double CONVERSION_FACTOR = 0.09290304;
 
-        double convert = area * converFactor;
+        double convert = area * CONVERSION_FACTOR;
 
         System.out.printf("The area is%n%d square feet%n%.3f square meters", area, convert);
     }
